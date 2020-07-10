@@ -2,11 +2,11 @@
 import math
 
 
-def area(radius):
-    return math.pi*radius**2
+# def area(radius):
+#     return math.pi*radius**2
 
 
-print(area(5))
+# print(area(5))
 
 
 # 写一个比较函数，接受两个值 x 和 y 。 如果 x > y， 则返回 1 ；如果 x == y， 则返回 0 ；如果 x < y，则返回 -1
@@ -26,14 +26,14 @@ print(compare(-2, -1))
 
 # distance = sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
 
-def distance(x1, y1, x2, y2):
-    a1 = x2-x1
-    b1 = y2-y1
-    value1 = a1**2+b1**2
-    return(math.sqrt(value1))
+# def distance(x1, y1, x2, y2):
+#     a1 = x2-x1
+#     b1 = y2-y1
+#     value1 = a1**2+b1**2
+#     return(math.sqrt(value1))
 
 
-print(distance(1, 2, 4, 6))
+# print(distance(1, 2, 4, 6))
 
 
 # 运用增量开发方式，写一个叫作 hypotenuse 的函数，接受直角三角形的两直角边长作为实参，返回该三角形斜边的长度。记录下你开发过程中的每一步
