@@ -11,3 +11,23 @@ def eval_loop():
 
 
 print(eval_loop())
+
+
+# 自己出的题：编写一个函数search_string取一个字符串里的字母，一直到取到n为止。
+
+def search_string(text, n):
+    if len(text) <= 0:
+        print('字符串为空')
+        return None
+    elif n > len(text):
+        print('n超过目标字符串长度')
+        return None
+    else:
+        p = 0
+        for i in text:
+            if p == n:
+                return i
+            p = p+1
+
+
+print(search_string('banana', 3))
