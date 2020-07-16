@@ -12,8 +12,6 @@ def find0(word, letter):
 print(find0('China', 'C'))
 
 # 修改 ``find``函数使得它接受第三个参数，即从何处开始搜索的索引。
-
-
 def find(word, letter, n):
     while n < len(word):
         if word[n] == letter:
@@ -34,8 +32,6 @@ print(count)
 
 # 将这段代码封装在一个名为 count 的函数中，
 # 并泛化该函数，使其接受字符串和字母作为实参。
-
-
 def count0(word, letter):
     count1 = 0
     for i in word:
@@ -53,11 +49,31 @@ def count1(word, letter):
     i = 0
     while i < len(word):
         index = find(word, letter, i)
-        if index==-1:
+        if index == -1:
             break
         else:
             count = count+1
             i = index+1
     return count
 
-print(count1("banana","w"))
+
+print(count1("banana", "w"))
+
+# 调试练习
+def is_reverse(word1, word2):
+    if len(word1) != len(word2):
+        return False
+
+    i = 0
+    j = len(word2)-1
+
+    while j >= 0:
+        if word1[i] != word2[j]:
+            return False
+        i = i+1
+        j = j-1
+
+    return True
+
+
+print(is_reverse('sqrt', 'trqs'))
