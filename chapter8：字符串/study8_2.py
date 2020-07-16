@@ -1,6 +1,6 @@
 # 遍历一个序列并在找到寻找的东西时返回,被称作搜索。
 # 遍历一个字符串并找到某字符在该字符串中的索引。
-def find(word, letter):
+def find0(word, letter):
     index = 0
     while index < len(word):
         if word[index] == letter:
@@ -9,7 +9,7 @@ def find(word, letter):
     return -1
 
 
-print(find('China', 'C'))
+print(find0('China', 'C'))
 
 # 修改 ``find``函数使得它接受第三个参数，即从何处开始搜索的索引。
 
@@ -36,7 +36,7 @@ print(count)
 # 并泛化该函数，使其接受字符串和字母作为实参。
 
 
-def count(word, letter):
+def count0(word, letter):
     count1 = 0
     for i in word:
         if i == letter:
@@ -44,7 +44,7 @@ def count(word, letter):
     print(count1)
 
 
-count('banana', 'b')
+count0('banana', 'b')
 
 # 重写这个函数，不再使用字符串遍历，
 # 而是使用上一节中三参数版本的 find 函数。
