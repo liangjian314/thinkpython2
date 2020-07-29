@@ -73,6 +73,5 @@ def is_anagram(str_one, str_two):
 
 print(is_anagram('abc', 'bca'))
 
-# 10_7编写一个叫做 has_duplicates 的函数，接受一个列表作为参数， 如果一个元素在列表中出现了不止一次，则返回 True 。 这个函数不能改变原列表。
-def has_duplicates(t):
+
     
