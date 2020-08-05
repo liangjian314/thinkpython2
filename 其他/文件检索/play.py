@@ -1,5 +1,5 @@
 def find_keyword():
-    file = open('D:\学习\python3\其他\文件检索\log.log')
+    file = open('.\其他\文件检索\log.log')
     keys = ['question4', 'question1', 'exception']
     for (num, keyword) in enumerate(file):
         for word in keys:
